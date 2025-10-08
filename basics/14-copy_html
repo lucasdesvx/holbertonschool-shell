@@ -1,2 +1,2 @@
 #!/bin/bash
-cp basics/.html
+cp *.html/my_first_directory
