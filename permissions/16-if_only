@@ -1,2 +1,3 @@
 #!/bin/bash
+# Changes the owner of the file hello to vincent only if it is owned by guillaume
 [ "$(stat -c %U hello)" = "guillaume" ] && chown vincent hello
