@@ -1,6 +1,2 @@
 #!/bin/bash
-# Changes the owner of 'hello' to vincent only if it is owned by guillaume
-
-if [ "$(ls -l hello | awk '{print $3}')" = "guillaume" ]; then
-    chown vincent hello
-fi
+[ "$(ls -l hello | awk '{print $3}')" = "guillaume" ] && chown vincent hello
